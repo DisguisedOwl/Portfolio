@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gradient-background {
+    height: 100vh;
+    background: linear-gradient(320deg, #000000, #24238a, #11106e);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+svg {
+    position: absolute;
+}
+
+.MyPhoto {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+}
+
+.star {
+    position: absolute;
+    height: 8rem;
+    top: 30%;
+}
+
+.star2 {
+    position: absolute;
+    height: 5rem;
+    top: 60%;
+    right: 10%;
+}
+
+.star3 {
+    position: absolute;
+    height: 3rem;
+    top: 50%;
+    right: 7%;
+}
+
+.containerflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: 2rem;
+    padding-top: 15%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p.firstpage {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding: auto;
+}
+
+p.smaller {
+    max-width: 80%;
+
+}
+
+.light {
+    background-color: #ffffff;
+    width: 124px;
+    border-radius: 5rem;
+    height: 3rem;
+    border: none;
+    color: #11106e;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.light:hover {
+    background-color: #d6b9ff;
+    box-shadow: 0px 15px 20px rgba(219, 168, 255, 0.4);
+    color: rgb(75, 23, 113);
+    transform: translateY(-7px);
+}
+
+h2 {
+    background-color: #d6b9ff;
+    padding: 20px;
+    margin-top: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.skills-section {
+    text-align: center;
+    /* Center-align all inline and inline-block elements */
+
+    padding: 20px 10px;
+    color: #11106e;
+}
+
+.skill-item,
+.first,
+.skill1 {
+    margin: 20px auto;
+    /* Auto margins for horizontal centering */
+    display: inline-block;
+    /* Use inline-block for horizontal centering */
+    vertical-align: top;
+    /* Align elements to the top */
+    max-width: 300px;
+    /* Adjust width as needed */
+    text-align: left;
+    /* Align text to the left inside the skill items */
+}
+
+.skill-item img,
+img.first2 {
+    width: 100%;
+    /* Responsive image */
+    height: auto;
+    padding: 10px;
+}
+
+.skill-item h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.skill-item p {
+    margin: 10px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Adjust .MyPhoto positioning */
+.MyPhoto {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+}
+
+/* ... (rest of your existing CSS) ... */
+
+.thirdpage {
+    min-height: fit-content;
+    background: linear-gradient(320deg, #000000, #24238a, #11106e);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: gradient-animation 10s ease infinite;
+    padding: 20px;
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Aligns items vertically in the center */
+    justify-content: center;
+    /* Center items horizontally */
+    text-align: left;
+    /* Aligns text to the left */
+}
+
+.codinggirl {
+    max-width: 30%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    /* Align the image vertically in the middle */
+    margin: auto;
+}
+
+.text-content h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.text-content {
+    display: inline-block;
+    vertical-align: middle;
+    /* Align the text vertically in the middle */
+    width: 50%;
+    margin: auto;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .thirdpage {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+    }
+
+    .codinggirl {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .text-content {
+        width: 100%;
+        /* Full width on small screens */
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+
+    .skill-item,
+    .first,
+    .skill1 {
+        display: block;
+        /* Stack items on smaller screens */
+        margin: 20px auto;
+    }
+
+    .MyPhoto {
+        max-width: 100%;
+        position: relative;
+        /* Change to relative for better positioning on small screens */
+        margin: 0 auto;
+        /* Center the image */
+        top: auto;
+        right: auto;
+    }
+}
+
+
+
+@media only screen and (min-width: 951px) {
+    .MyPhoto {
+        position: absolute;
+        max-width: 25rem;
+        float: right;
+        right: 20%;
+        top: 20%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p.firstpage {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 2000px) {
+    .MyPhoto {
+        position: absolute;
+        max-width: 33rem;
+        right: 21%;
+        top: 22%;
+    }
+
+}
+
+@media only screen and (max-width: 1500px) {
+    .MyPhoto {
+        position: absolute;
+        max-width: 22rem;
+        right: 21%;
+        top: 15%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    p.firstpage {
+        font-size: 1.25rem;
+    }
+    .star{
+        top: 25%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .MyPhoto {
+        position: absolute;
+        max-width: 15rem;
+        right: 21%;
+        top: 15%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    p.firstpage {
+        font-size: 1.35rem;
+    }
+
+    .star3 {
+        right: 2%;
+        top: 80%;
+    }
+
+    .star2 {
+        top: 90%;
+        right: 2%;
+    }
+    .star {
+        position: absolute;
+        height: 3rem;
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .MyPhoto {
+        position: absolute;
+        right: 21%;
+        top: 8%;
+        max-width: 13rem;
+    }
+    p.firstpage {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+
+}
+@media only screen and (max-width: 770px) {
+    .MyPhoto {
+        position: absolute;
+        right: 21%;
+        top: 10%;
+        max-width: 13rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .MyPhoto {
+        position: absolute;
+        right: 21%;
+        top: 7%;
+        max-width: 10rem;
+    }
+    .star{ 
+        top: 15%
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .MyPhoto {
+        position: absolute;
+        right: 21%;
+        top: 5%;
+        max-width: 9rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p.firstpage {
+        font-size: 1rem;
+    }
+}
+
+footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color:#24238a;
+    background-color: #d6b9ff;
+    padding: 2%;
+    font-weight: bold;
+}
